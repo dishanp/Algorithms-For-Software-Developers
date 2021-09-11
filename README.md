@@ -2,9 +2,9 @@
 ![alt text](https://www.springboard.com/library/static/cb92b35a5d50085b5a81b5a1e66bd46e/bbc2a/DSC-Article-datascientist-generalimage.png)
 
 ## Table of contents
-* [General Info](#general-Info)
-* [Languages](#technologies)
-* [Environment & Tools](#Environment-&-Tools)
+* General Info
+* Languages
+* Environment & Tools
 
 ## General Info
 Solutions to the most commonly asked interview problems for aspiring software developers. Questions are picked from a mix of platforms like Leetcode, Hackerrank, GFG etc.
