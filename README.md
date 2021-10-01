@@ -18,3 +18,9 @@ The repository contains programs written in:
 ## Environment & Tools
 * VS Code
 * Leetcode / Hackerrank / Geeks For Geeks / InterviewBit / Codechef
+
+## License
+
+**[BSD 2-Clause "Simplified" License](https://github.com/dishanp/Algorithms-For-Software-Developers/blob/main/LICENSE)**
+
+**Maintainer : [ Dishan Purkayastha](https://github.com/dishanp/, "Dishan's Profile")**
