@@ -5,6 +5,7 @@
 * General Info
 * Languages
 * Environment & Tools
+* License
 
 ## General Info
 Solutions to the most commonly asked interview problems for aspiring software developers. Questions are picked from a mix of platforms like Leetcode, Hackerrank, GFG etc.
