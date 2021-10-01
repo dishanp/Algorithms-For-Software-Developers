@@ -23,4 +23,4 @@ The repository contains programs written in:
 
 **[BSD 2-Clause "Simplified" License](https://github.com/dishanp/Algorithms-For-Software-Developers/blob/main/LICENSE)**
 
-**Maintainer : [ Dishan Purkayastha](https://github.com/dishanp/, "Dishan's Profile")**
+**Maintainer : [ Dishan Purkayastha](https://github.com/dishanp/)**
