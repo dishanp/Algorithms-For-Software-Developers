@@ -18,3 +18,27 @@ vector<int> topoSort(int V, vector<int> adj[]){
     }
     return ans;
 }
+
+// USING VECTOR INSTEAD OF STACK:
+
+/*
+
+void dfs(vector<int>adj[],vector<int>&res,vector<bool>&vis,int node){
+	    vis[node]=true;
+	    for(auto it:adj[node])
+	        if(!vis[it])
+	            dfs(adj,res,vis,it);
+	    res.push_back(node);
+	}
+	vector<int> topoSort(int v, vector<int> adj[]) 
+	{
+	    vector<bool>vis(v,false);
+	    vector<int>res;
+	    for(int i=0;i<v;i++)
+	    if(!vis[i])
+	    dfs(adj,res,vis,i);
+	    reverse(res.begin(),res.end());
+	    return res;
+	}
+    
+*/
