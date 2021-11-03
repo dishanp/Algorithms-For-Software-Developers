@@ -32,3 +32,27 @@ void util(TreeNode *root,vector<vector<int>>&res,int k,vector<int>p,int tar){
         return res;
     }
 };
+
+// OR:
+
+class Solution {
+public:
+    void util(vector<vector<int>>&res,vector<int>&curr,TreeNode *root,int tar){
+        if(!root){
+            return;
+        }
+        curr.push_back(root->val);
+        if(root->val==tar&&!root->left&&!root->right){
+            res.push_back(curr);
+        }
+        util(res,curr,root->left,tar-root->val);
+        util(res,curr,root->right,tar-root->val);
+        curr.pop_back();
+    }
+    vector<vector<int>> pathSum(TreeNode* root, int tar){
+        vector<vector<int>>res;
+        vector<int>curr;
+        util(res,curr,root,tar);
+        return res;
+    }
+};
