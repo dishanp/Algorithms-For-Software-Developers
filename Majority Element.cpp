@@ -33,3 +33,24 @@ int majorityElement(int a[], int size)
         }
        return -1; 
     }
+
+//Moore's Voting Algorithm (Constant Space)
+
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int s=nums.size()/2;
+        int maj=nums[0];
+        int n=nums.size();
+        int ctr=0;
+        for(int i=0;i<n;i++){
+            if(ctr==0)
+                maj=nums[i];
+            if(nums[i]==maj)
+                ++ctr;
+            else 
+                --ctr;
+        }
+        return maj;
+    }
+};
