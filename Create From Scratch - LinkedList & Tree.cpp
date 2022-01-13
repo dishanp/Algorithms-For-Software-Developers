@@ -24,3 +24,35 @@ int main(){
     display(head);
     return 0;
 }
+
+//Tree
+
+using namespace std;
+#include<bits/stdc++.h>
+typedef struct t{
+    int data;
+    struct t *left;
+    struct t *right;
+}tree;
+tree *create(int x){
+    tree *temp=new tree();
+    temp->data=x;
+    temp->left=temp->right=0;
+    return temp;
+}
+void inorder(tree *root){
+    if(root){
+        inorder(root->left);
+        cout<<root->data<<" ";
+        inorder(root->right);
+    }
+}
+int main(){
+    tree *root=create(5);
+    root->left=create(10);
+    root->right=create(10);
+    root->left->left=create(20);
+    root->right->right=create(20);
+    inorder(root);
+    return 0;
+}
