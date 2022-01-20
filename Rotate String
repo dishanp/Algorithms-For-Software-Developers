@@ -1,0 +1,24 @@
+class Solution {
+public:
+    string rotate(string &s){
+        int n=s.size();
+        char ch=s[0];
+        for(int i=0;i<n-1;i++){
+            s[i]=s[i+1];
+        }
+        s[n-1]=ch;
+        return s;
+    }
+    bool rotateString(string s, string goal) {
+        int no=s.size();
+        string str=s;
+        while(1){
+            string temp=rotate(str);
+            if(temp==goal)
+                return true;
+            if(temp==s)
+                break;
+        }
+        return 0;
+    }
+};
